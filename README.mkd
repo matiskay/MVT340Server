@@ -22,15 +22,16 @@ This code works for v. 2.5.8 of OpenGTS
 ## Installation steps:
 
 1. Modify the dcservers.xml in OpenGTS' root directory to include the snippet in `dcservers_mod.xml`. Remember to replace the TCP and UDP ports by those you want to use, by default I put port 27868 for both of them.
-2. Modify the source in `org/opengts/db/DCServerFactory` to include the constant `public static final String  MVT_340_NAME                       = "mvt340";           // [27838]`
-3. Put the mvt340 package source inside the `org/opengts/servers` directory of the OpenGTS source
-4. Use `ant all` to rebuild the project
-5. Use `ant mvt340` to build the new server
-6. It's done. You can start the new server using the command `$GTS_HOME/bin/runserver.pl -s mvt340`
+2. Modify the source in `org/opengts/db/DCServerFactory` to include the constant `public static final String  MVT_340_NAME                       = "mvt340";           // [27838]`.
+3. Put the mvt340 package source inside the `org/opengts/servers` directory of the OpenGTS source.
+4. Use `ant all` to rebuild the project.
+5. Include the snippet `build_mod.xml` to `build.xml`.
+5. Use `ant mvt340` to build the new server.
+6. It's done. You can start the new server using the command `$GTS_HOME/bin/runserver.pl -s mvt340`.
 
 
 
 ## Useful links:
 
 * OpenGTS installation and configuration manual: http://opengts.sourceforge.net/OpenGTS_Config.pdf
-* Meitrack MVT340 GPRS protocol: http://www.meitrack.net/meitrack-support/protocol/MEITRACK_GPRS_Protocol.pdf
+* Meitrack MVT340 GPRS protocol: http://www.meitrack.com/meitrack-support/protocol/MEITRACK_GPRS_Protocol_V1.8.pdf
